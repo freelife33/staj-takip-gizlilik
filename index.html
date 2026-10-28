@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Staj Takip Gizlilik Politikası</title>
+<style>
+  body { margin: 0; font-family: "Segoe UI", sans-serif; color: #1c2833; background: #f4f7fb; line-height: 1.55; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  p, li { font-size: 1rem; }
+  .meta { color: #4a5b6b; }
+  a { color: #1f4e79; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Staj Takip Gizlilik Politikası</h1>
+  <p class="meta">Son güncelleme: 28 Ekim 2026</p>
+  <p>Bu metin, <strong>Staj Takip</strong> Android uygulamasını (paket adı <code>com.stajtakip.staj_takip</code>) ve <a href="https://ademdigil.online">https://ademdigil.online</a> adresindeki telefon sitesi ile yönetim panelini kapsar.</p>
+
+  <h2>Veri sorumlusu</h2>
+  <p>Sistemi işleten okul, öğrenci ve personel kayıtları bakımından veri sorumlusudur. Uygulama ve site <a href="https://ademdigil.online">ademdigil.online</a> üzerinde barındırılır. Bir kurulum bir okula aittir.</p>
+  <p>Başvuru ve sorular: <a href="mailto:EPOSTA_ADRESINIZ">EPOSTA_ADRESINIZ</a></p>
+
+  <h2>Kim kullanır</h2>
+  <ul>
+    <li>Öğrenci ve öğretmen, Android uygulaması veya <a href="https://ademdigil.online/uygulama">ademdigil.online/uygulama</a> adresiyle giriş yapar. iPhone kullanıcıları bu siteyi kullanır; ayrı bir App Store uygulaması yoktur.</li>
+    <li>İşyeri yetkilisinin hesabı yoktur. Yalnızca kendisine iletilen süreli bağlantı ve işyeri PIN’i ile ilgili bildirimi onaylar veya reddeder.</li>
+    <li>Okul yöneticisi web yönetim panelini kullanır.</li>
+  </ul>
+
+  <h2>İşlenen veriler</h2>
+  <p><strong>Hesap.</strong> Ad soyad, e-posta, rol, öğrenci numarası, sınıf, bölüm ve öğretmen ataması. Parola yalnızca geri döndürülemeyen bir özet olarak saklanır. Yönetici yeni hesap açtığında verdiği parola geçicidir; kişi ilk girişte kendi parolasını belirler.</p>
+  <p><strong>İşyeri.</strong> Ad, adres, telefon, harita koordinatı, kabul yarıçapı ve yetkili adı. PIN yalnızca özet olarak saklanır.</p>
+  <p><strong>Staj bildirimi.</strong> Okul takvim günü, giriş saati, durum (onay bekliyor, doğrulandı, reddedildi, süresi doldu, iptal edildi, mazeretli) ve zamanında veya geç bilgisi. Saatler veritabanında UTC tutulur, ekranda Avrupa/İstanbul saatine göre gösterilir. Çıkış saati tutulmaz.</p>
+  <p><strong>Fotoğraf.</strong> Öğrenci bildirimi gönderirken kamerayla çeker. Fotoğraf, o bildirimi gören öğretmen ve okul yönetimi ile, bağlantıyı alan işyeri yetkilisi tarafından görülebilir. Dosya sunucuda saklanır.</p>
+  <p><strong>Konum.</strong> Yalnızca öğrenci “İşe geldim” düğmesine bastığında ve izin verirse alınır. Arka planda, uygulama kapalıyken veya sürekli izleme yoktur. Gönderilen enlem, boylam ve doğruluk payı sunucuda işyerine olan mesafeyi hesaplamak için kullanılır. Sonuç “kapsam içinde” veya “kapsam dışında” olarak gösterilir. Konum vermeden de bildirim oluşturulabilir. Konum kaydı tek başına onay anlamına gelmez; kararı işyeri yetkilisi verir.</p>
+  <p><strong>Doğrulama bağlantısı.</strong> Sunucu, işyeri yetkilisine iletilmek üzere kısa bir metin ve tek kullanımlık bağlantı üretir. Öğrenci bu metni telefonun kendi paylaşım ekranıyla gönderir. Uygulama WhatsApp veya başka bir mesajlaşmayı okumaz ve kendisi mesaj göndermez. Bağlantının düz hali veritabanında tutulmaz; yalnızca özeti saklanır. Süresi dolan bekleyen bildirim “Süresi doldu” olur. Kaybolan bağlantı yeniden üretilemez.</p>
+  <p><strong>Oturum.</strong> Girişten sonra kısa ömürlü bir erişim belirteci ve 30 güne kadar yenileme belirteci verilir. Android uygulamasında bunlar cihazın güvenli deposunda, sitede tarayıcının yerel deposunda durur. Sunucuda düz belirteç tutulmaz. Çıkış, açık oturumu kapatır.</p>
+  <p><strong>Güvenlik kayıtları.</strong> İşlemi yapan kişi, zaman, işlem türü, başarısız giriş ve PIN denemesi ile bağlantı IP adresi tutulabilir. Parola, PIN ve düz doğrulama bağlantısı kayıtlara yazılmaz. Aynı bildirim için 15 dakika içinde 5 hatalı PIN, formu kilitler.</p>
+  <p><strong>Reklam.</strong> Yalnızca Android uygulamasında, öğrencinin Bugün ekranının ve öğretmenin yoklama listesinin altında bir şerit reklam vardır. Giriş, parola ve işe geldim düğmesinin üzerinde reklam yoktur. Sitede reklam yoktur. Önce Google AdMob kullanılır. Reklam gelmezse aynı yerde Unity Ads gösterilir. İkisi aynı anda gösterilmez. İstekler kişiselleştirilmez. Bu sağlayıcılar reklam kimliğini (Android reklam kimliği) okuyabilir. Uygulama 13 yaş altını hedeflemez; lise öğrencileri 18 yaşından küçük olabileceği için reklamlar kişiselleştirilmemiş istenir ve içerik ebeveyn rehberliği düzeyini aşmayacak şekilde sınırlanır.</p>
+
+  <h2>Amaç</h2>
+  <ul>
+    <li>Staj günü bildiriminin alınması, işyeri yetkilisine onaylatılması ve öğretmen ile yönetimin izlemesi.</li>
+    <li>Hesabın doğrulanması, oturumun sürdürülmesi ve kötüye kullanımın sınırlanması.</li>
+    <li>Android uygulamasında reklam göstererek uygulamanın sürdürülmesi.</li>
+  </ul>
+  <p>Veriler satılmaz. Konum ve fotoğraf reklam hedeflemesi için kullanılmaz.</p>
+
+  <h2>Kimlerle paylaşılır</h2>
+  <ul>
+    <li>İlgili öğrencinin öğretmeni ve okul yöneticisi, yoklama kaydı ile fotoğrafı görür.</li>
+    <li>İşyeri yetkilisi, yalnızca elindeki bağlantı üzerinden o bildirimi görür.</li>
+    <li>Google AdMob (Google) ve Unity Ads (Unity Technologies), Android reklamını göstermek için reklam kimliği ve teknik istek verisini işleyebilir. Bu şirketler veriyi kendi ülkeleri dahil yurt dışında işleyebilir.</li>
+    <li>Google Play, uygulamanın dağıtımı için kendi hesap ve cihaz verisini işler.</li>
+    <li>Site ve API, ademdigil.online sunucusunda çalışır. Aktarım HTTPS ile yapılır.</li>
+  </ul>
+
+  <h2>Saklama</h2>
+  <p>Hesap, öğrenci veya personel kaydı okulda durduğu sürece tutulur. Yönetici kaydı pasifleştirebilir; pasifleştirmek veritabanından kalıcı silmek değildir. Yoklama satırı ve fotoğraf, okulun staj kaydı olarak durur. Doğrulama bağlantısının kullanım süresi dolunca bağlantı geçersiz olur, yoklama satırı silinmez. Yenileme oturumu en çok 30 gündür. Kalıcı silme talebi aşağıdaki iletişim adresine veya okul yönetimine yapılır; yasal saklama yükümlülüğü olan kayıtlar bu sürenin sonuna kadar tutulabilir.</p>
+
+  <h2>Haklarınız</h2>
+  <p>6698 sayılı Kişisel Verilerin Korunması Kanunu’nun 11. maddesindeki haklarınız saklıdır. Verinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini isteme ve işlenmesine itiraz etme taleplerini iletişim adresine yazabilirsiniz. Başvurunun reddi veya yanıtsız kalması halinde Kişisel Verileri Koruma Kurulu’na şikayette bulunabilirsiniz.</p>
+  <p>Android reklam kimliğini kapatmak veya sıfırlamak için telefonunuzda Ayarlar, Gizlilik, Reklamlar bölümünü kullanın. Konum iznini uygulama bilgilerinden kapatabilirsiniz; bildirim o zaman konumsuz kaydedilir.</p>
+
+  <h2>Değişiklik</h2>
+  <p>Bu metin değişirse sayfanın üstündeki tarih güncellenir. Güncel metin her zaman bu adrestedir.</p>
+</main>
+</body>
+</html>
